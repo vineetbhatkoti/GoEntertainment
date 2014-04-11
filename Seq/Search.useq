@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.4" icons="true" automaticImage="JPEG">  
+  <object id="1" language="java" name="com.managedBean.SearchSongBean" project="JSPProject" 
+    file="/JSPProject/src/com/managedBean/SearchSongBean.java" binary="false" label="searchSongBean" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="128" y="0"/>    
+    <execution id="2">      
+      <position height="147" width="122" x="5" y="99"/>    
+    </execution>    
+    <execution id="5">      
+      <position height="21" width="7" x="63" y="163"/>    
+    </execution>  
+  </object>  
+  <object id="6" language="java" name="com.managedBean.SearchMovieBean" project="JSPProject" 
+    file="/JSPProject/src/com/managedBean/SearchMovieBean.java" binary="false" label="searchMovieBean" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="255" y="0"/>    
+    <execution id="7">      
+      <position height="147" width="126" x="131" y="257"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="21" width="7" x="191" y="325"/>    
+    </execution>  
+  </object>  
+  <object id="11" language="java" name="com.business.Search" project="JSPProject" 
+    file="/JSPProject/src/com/business/Search.java" binary="false" label="search" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="366" y="0"/>    
+    <execution id="4">      
+      <position height="105" width="65" x="261" y="120"/>    
+    </execution>    
+    <execution id="15">      
+      <position height="21" width="7" x="290" y="162"/>    
+    </execution>    
+    <execution id="9">      
+      <position height="105" width="65" x="261" y="278"/>    
+    </execution>    
+    <execution id="19">      
+      <position height="21" width="7" x="290" y="320"/>    
+    </execution>  
+  </object>  
+  <object id="20" language="java" name="com.persistance.SearchDAO" project="JSPProject" 
+    file="/JSPProject/src/com/persistance/SearchDAO.java" binary="false" label="searchDAO" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="490" y="0"/>    
+    <execution id="13">      
+      <position height="63" width="89" x="330" y="141"/>    
+    </execution>    
+    <execution id="17">      
+      <position height="63" width="89" x="330" y="299"/>    
+    </execution>  
+  </object>  
+  <message id="3" 
+    operation="getSongs(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int):java.util.List&lt;Songs&gt;">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="8" 
+    operation="getMovie(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int):java.util.List&lt;Movie&gt;">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>  
+  <message id="12" 
+    operation="getSongs(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int):java.util.List&lt;Songs&gt;">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="14">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="5"/>  
+  </message>  
+  <message id="16" 
+    operation="getMovie(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int):java.util.List&lt;Movie&gt;">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="18">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="21">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="22">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>
+</sequence-diagram>

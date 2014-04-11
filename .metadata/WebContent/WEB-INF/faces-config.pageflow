@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf13802536351000" configfile="/JSPProject/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="search" x="192" y="72" id="pf13819475622221" referenceLink="//@navigationRule.5/@navigationCase.0/@toViewId|" outlinks="pf13819478267213" inlinks="pf13827509774344" path="/search.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="Cart" x="481" y="108" id="pf13819475622200" referenceLink="//@navigationRule.16/@navigationCase.0/@toViewId|" outlinks="pf13822874726650" inlinks="pf13819478267213 pf13845654488767" path="/Cart.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="Thanks" x="497" y="264" id="pf13822874726651" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf13822874726650" path="/Thanks.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="login" x="96" y="252" id="pf13825733377170" referenceLink="//@navigationRule.13/@fromViewId|" outlinks="pf13825733377171 pf13827509774344 pf13827510274895 pf13827519160676 pf13831808150732 pf13845474145682" inlinks="pf13827510274895" path="/login.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="Register" x="216" y="252" id="pf13825733377172" referenceLink="//@navigationRule.4/@fromViewId|" outlinks="pf13827419286180 pf13827496738112" inlinks="pf13825733377171" path="/Register.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="LoginSuccess" x="348" y="252" id="pf13827419286181" referenceLink="//@navigationRule.3/@navigationCase.0/@toViewId|" inlinks="pf13827419286180" path="/LoginSuccess.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="Error_NewUser" x="368" y="377" id="pf13827496738113" referenceLink="//@navigationRule.4/@navigationCase.0/@toViewId|" inlinks="pf13827496738112" path="/Error_NewUser.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="NonMemberSearch" x="99" y="65" id="pf13827519160687" referenceLink="//@navigationRule.7/@navigationCase.0/@toViewId|" inlinks="pf13827519160676" path="/NonMemberSearch.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="admin" x="116" y="351" id="pf13831769040261" referenceLink="//@navigationRule.11/@fromViewId|" outlinks="pf13832361187950 pf13833238186660" inlinks="pf13831808150743" path="/admin.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="adminLogin" x="45" y="371" id="pf13831808150744" referenceLink="//@navigationRule.9/@fromViewId|" outlinks="pf13831808150743" inlinks="pf13831808150732" path="/adminLogin.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="addInventory" x="225" y="380" id="pf13832361187951" referenceLink="//@navigationRule.10/@navigationCase.0/@toViewId|" inlinks="pf13832361187950" path="/addInventory.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="updateInventory" x="156" y="454" id="pf13833238186661" referenceLink="//@navigationRule.12/@fromViewId|" outlinks="pf13833238897392" inlinks="pf13833238186660" path="/updateInventory.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="AdminUpdateConfirmation" x="353" y="486" id="pf13833238897393" referenceLink="//@navigationRule.12/@navigationCase.0/@toViewId|" inlinks="pf13833238897392" path="/AdminUpdateConfirmation.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="customerRepLogin" id="pf13845474145703" referenceLink="//@navigationRule.14/@fromViewId|" outlinks="pf13845652537123" inlinks="pf13845474145682" path="/customerRepLogin.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="CustomerRepHome" x="216" id="pf13845652537124" referenceLink="//@navigationRule.17/@fromViewId|" outlinks="pf13845653334785 pf13845700800798" inlinks="pf13845652537123" path="/CustomerRepHome.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="CustomerRepSearch" x="528" id="pf13845653334786" referenceLink="//@navigationRule.16/@fromViewId|" outlinks="pf13845654488767" inlinks="pf13845653334785" path="/CustomerRepSearch.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="ConfirmReserve" x="654" y="128" id="pf13845700800799" referenceLink="//@navigationRule.17/@navigationCase.0/@toViewId|" inlinks="pf13845700800798" path="/ConfirmReserve.jsp"/>
+  <links id="pf13819478267213" target="pf13819475622200" source="pf13819475622221" outcome="success" redirect="true"/>
+  <links id="pf13822874726650" target="pf13822874726651" source="pf13819475622200" outcome="success"/>
+  <links id="pf13825733377171" target="pf13825733377172" source="pf13825733377170" outcome="register"/>
+  <links id="pf13827419286180" target="pf13827419286181" source="pf13825733377172" outcome="registerSuccess"/>
+  <links id="pf13827496738112" target="pf13827496738113" source="pf13825733377172" outcome="failure"/>
+  <links id="pf13827509774344" target="pf13819475622221" source="pf13825733377170" outcome="successMember"/>
+  <links id="pf13827510274895" target="pf13825733377170" source="pf13825733377170" outcome="errorMember">
+    <bendPoints d1Height="-36" d2Height="-36"/>
+    <bendPoints d1Width="-64" d1Height="-36" d2Width="-64" d2Height="-36"/>
+    <bendPoints d1Width="-64" d2Width="-64"/>
+  </links>
+  <links id="pf13827519160676" target="pf13827519160687" source="pf13825733377170" outcome="nonMemberSearch"/>
+  <links id="pf13831808150732" target="pf13831808150744" source="pf13825733377170" outcome="admin"/>
+  <links id="pf13831808150743" target="pf13831769040261" source="pf13831808150744" outcome="adminSuccess"/>
+  <links id="pf13832361187950" target="pf13832361187951" source="pf13831769040261" outcome="addInventory"/>
+  <links id="pf13833238186660" target="pf13833238186661" source="pf13831769040261" outcome="updateInventory"/>
+  <links id="pf13833238897392" target="pf13833238897393" source="pf13833238186661" outcome="success"/>
+  <links id="pf13845474145682" target="pf13845474145703" source="pf13825733377170" outcome="customerRep"/>
+  <links id="pf13845652537123" target="pf13845652537124" source="pf13845474145703" outcome="CRauthenticated"/>
+  <links id="pf13845653334785" target="pf13845653334786" source="pf13845652537124" outcome="searchCRReserve"/>
+  <links id="pf13845654488767" target="pf13819475622200" source="pf13845653334786" outcome="success"/>
+  <links id="pf13845700800798" target="pf13845700800799" source="pf13845652537124" outcome="confirmorder"/>
+</pageflow:Pageflow>

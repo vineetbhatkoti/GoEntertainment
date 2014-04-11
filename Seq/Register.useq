@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.4" icons="true" automaticImage="JPEG">  
+  <object id="1" language="java" name="com.managedBean.RegisterBean" project="JSPProject" 
+    file="/JSPProject/src/com/managedBean/RegisterBean.java" binary="false" label="registerBean" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="234" y="0"/>    
+    <execution id="2">      
+      <position height="152" width="100" x="5" y="108"/>    
+    </execution>    
+    <execution id="5">      
+      <position height="21" width="7" x="52" y="197"/>    
+    </execution>  
+  </object>  
+  <object id="6" language="java" name="com.business.Member" project="JSPProject" 
+    file="/JSPProject/src/com/business/Member.java" binary="false" label="member" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="80" y="0"/>    
+    <execution id="4">      
+      <position height="110" width="70" x="109" y="129"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="21" width="7" x="141" y="175"/>    
+    </execution>  
+  </object>  
+  <object id="11" language="java" name="com.persistance.MemberDAO" project="JSPProject" 
+    file="/JSPProject/src/com/persistance/MemberDAO.java" binary="false" label="memberDAO" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="348" y="0"/>    
+    <execution id="8">      
+      <position height="67" width="95" x="183" y="150"/>    
+    </execution>  
+  </object>  
+  <message id="3" 
+    operation="register(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int):java.lang.String">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="7" 
+    operation="register(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int):java.lang.String">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="5"/>  
+  </message>  
+  <message id="12">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>
+</sequence-diagram>

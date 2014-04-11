@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.4" icons="true" automaticImage="JPEG">  
+  <object id="1" language="java" name="com.managedBean.AdminBean" project="JSPProject" 
+    file="/JSPProject/src/com/managedBean/AdminBean.java" binary="false" label="adminBean" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="161" y="0"/>    
+    <execution id="2">      
+      <position height="189" width="88" x="5" y="99"/>    
+    </execution>    
+    <execution id="5">      
+      <position height="21" width="7" x="46" y="183"/>    
+    </execution>    
+    <execution id="6">      
+      <position height="105" width="88" x="5" y="313"/>    
+    </execution>    
+    <execution id="9">      
+      <position height="105" width="88" x="5" y="436"/>    
+    </execution>    
+    <execution id="12">      
+      <position height="105" width="88" x="5" y="558"/>    
+    </execution>    
+    <execution id="15">      
+      <position height="105" width="88" x="5" y="659"/>    
+    </execution>    
+    <execution id="18">      
+      <position height="147" width="88" x="5" y="756"/>    
+    </execution>    
+    <execution id="21">      
+      <position height="21" width="7" x="52" y="802"/>    
+    </execution>    
+    <execution id="22">      
+      <position height="189" width="88" x="5" y="889"/>    
+    </execution>    
+    <execution id="25">      
+      <position height="21" width="7" x="55" y="973"/>    
+    </execution>    
+    <execution id="26">      
+      <position height="189" width="88" x="5" y="1067"/>    
+    </execution>    
+    <execution id="29">      
+      <position height="21" width="7" x="58" y="1151"/>    
+    </execution>    
+    <execution id="30">      
+      <position height="105" width="88" x="5" y="1238"/>    
+    </execution>    
+    <execution id="33">      
+      <position height="105" width="88" x="5" y="1337"/>    
+    </execution>  
+  </object>  
+  <object id="36" language="java" name="com.business.Admin" project="JSPProject" 
+    file="/JSPProject/src/com/business/Admin.java" binary="false" label="admin" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="221" y="0"/>    
+    <execution id="4">      
+      <position height="147" width="65" x="97" y="120"/>    
+    </execution>    
+    <execution id="39">      
+      <position height="63" width="7" x="126" y="162"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="63" width="65" x="97" y="334"/>    
+    </execution>    
+    <execution id="11">      
+      <position height="63" width="65" x="97" y="457"/>    
+    </execution>    
+    <execution id="14">      
+      <position height="63" width="65" x="97" y="579"/>    
+    </execution>    
+    <execution id="17">      
+      <position height="63" width="65" x="97" y="680"/>    
+    </execution>    
+    <execution id="20">      
+      <position height="105" width="65" x="97" y="777"/>    
+    </execution>    
+    <execution id="52">      
+      <position height="21" width="7" x="126" y="819"/>    
+    </execution>    
+    <execution id="24">      
+      <position height="147" width="65" x="97" y="910"/>    
+    </execution>    
+    <execution id="55">      
+      <position height="63" width="7" x="126" y="952"/>    
+    </execution>    
+    <execution id="28">      
+      <position height="147" width="65" x="97" y="1088"/>    
+    </execution>    
+    <execution id="59">      
+      <position height="63" width="7" x="126" y="1130"/>    
+    </execution>    
+    <execution id="32">      
+      <position height="63" width="65" x="97" y="1259"/>    
+    </execution>    
+    <execution id="35">      
+      <position height="63" width="65" x="97" y="1358"/>    
+    </execution>  
+  </object>  
+  <object id="65" language="java" name="com.persistance.AdminDAO" project="JSPProject" 
+    file="/JSPProject/src/com/persistance/AdminDAO.java" binary="false" label="adminDAO" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="444" y="0"/>    
+    <execution id="38">      
+      <position height="105" width="84" x="166" y="141"/>    
+    </execution>    
+    <execution id="42">      
+      <position height="21" width="84" x="166" y="355"/>    
+    </execution>    
+    <execution id="44">      
+      <position height="21" width="84" x="166" y="478"/>    
+    </execution>    
+    <execution id="46">      
+      <position height="21" width="84" x="166" y="600"/>    
+    </execution>    
+    <execution id="48">      
+      <position height="21" width="84" x="166" y="701"/>    
+    </execution>    
+    <execution id="50">      
+      <position height="63" width="84" x="166" y="798"/>    
+    </execution>    
+    <execution id="54">      
+      <position height="105" width="84" x="166" y="931"/>    
+    </execution>    
+    <execution id="58">      
+      <position height="105" width="84" x="166" y="1109"/>    
+    </execution>    
+    <execution id="62">      
+      <position height="21" width="84" x="166" y="1280"/>    
+    </execution>    
+    <execution id="64">      
+      <position height="21" width="84" x="166" y="1379"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="adminAuthenticate(java.lang.String,java.lang.String):java.lang.String">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="7" operation="addSong(com.DTO.Songs,int):void">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="10" operation="addMovie(com.DTO.Movie,int):void">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="11"/>  
+  </message>  
+  <message id="13" operation="deleteSong(java.util.List&lt;com.DTO.Songs&gt;,int):void">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="14"/>  
+  </message>  
+  <message id="16" operation="deleteMovie(java.util.List&lt;com.DTO.Movie&gt;,int):void">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="19" operation="getAllMovies(int):java.util.List&lt;Movie&gt;">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="20"/>  
+  </message>  
+  <message id="23" operation="getAllSong(int):java.util.List&lt;Songs&gt;">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="24"/>  
+  </message>  
+  <message id="27" operation="getMemberList():java.util.List&lt;com.DTO.Member&gt;">    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="28"/>  
+  </message>  
+  <message id="31" operation="updateSong(java.util.List&lt;com.DTO.Songs&gt;,int):void">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="32"/>  
+  </message>  
+  <message id="34" operation="updateMovie(java.util.List&lt;com.DTO.Movie&gt;,int):void">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="35"/>  
+  </message>  
+  <message id="37" operation="adminAuthenticate(java.lang.String,java.lang.String):java.lang.String">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="38"/>  
+  </message>  
+  <message id="40">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="5"/>  
+  </message>  
+  <message id="41" operation="addSong(com.DTO.Songs,int):void">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="42"/>  
+  </message>  
+  <message id="43" operation="addMovie(com.DTO.Movie,int):void">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="44"/>  
+  </message>  
+  <message id="45" operation="deleteSong(java.util.List&lt;com.DTO.Songs&gt;,int):void">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="46"/>  
+  </message>  
+  <message id="47" operation="deleteMovie(java.util.List&lt;com.DTO.Movie&gt;,int):void">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="48"/>  
+  </message>  
+  <message id="49" operation="getAllMovies(int):java.util.List&lt;Movie&gt;">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="50"/>  
+  </message>  
+  <message id="51">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="21"/>  
+  </message>  
+  <message id="53" operation="getAllSong(int):java.util.List&lt;Songs&gt;">    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="54"/>  
+  </message>  
+  <message id="56">    
+    <end type="SOURCE" refId="55"/>    
+    <end type="TARGET" refId="25"/>  
+  </message>  
+  <message id="57" operation="getMemberList():java.util.List&lt;Member&gt;">    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="58"/>  
+  </message>  
+  <message id="60">    
+    <end type="SOURCE" refId="59"/>    
+    <end type="TARGET" refId="29"/>  
+  </message>  
+  <message id="61" operation="updateSong(java.util.List&lt;com.DTO.Songs&gt;,int):void">    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="62"/>  
+  </message>  
+  <message id="63" operation="updateMovie(java.util.List&lt;com.DTO.Movie&gt;,int):void">    
+    <end type="SOURCE" refId="35"/>    
+    <end type="TARGET" refId="64"/>  
+  </message>  
+  <message id="66">    
+    <end type="SOURCE" refId="38"/>    
+    <end type="TARGET" refId="39"/>  
+  </message>  
+  <message id="67">    
+    <end type="SOURCE" refId="50"/>    
+    <end type="TARGET" refId="52"/>  
+  </message>  
+  <message id="68">    
+    <end type="SOURCE" refId="54"/>    
+    <end type="TARGET" refId="55"/>  
+  </message>  
+  <message id="69">    
+    <end type="SOURCE" refId="58"/>    
+    <end type="TARGET" refId="59"/>  
+  </message>
+</sequence-diagram>
